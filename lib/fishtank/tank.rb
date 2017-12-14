@@ -4,11 +4,8 @@ module FishTank
   class Tank
     attr_accessor :taxa
 
-    attr_accessor :attributes
-
-    def initialize(target_attributes: [])
+    def initialize
       @taxa = []
-      @attributes = target_attributes 
     end
 
     def add(taxon)

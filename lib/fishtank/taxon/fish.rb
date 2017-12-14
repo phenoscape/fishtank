@@ -16,5 +16,9 @@ module FishTank
       }
     end
 
+    def pic_height
+      50
+    end
+
   end
 end

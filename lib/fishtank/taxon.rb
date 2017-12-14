@@ -63,7 +63,6 @@ module FishTank
           stats[entity][:crunched][t] = v 
         end
       end
-      ap stats
       true
     end
 
@@ -87,10 +86,12 @@ module FishTank
       return {}
     end
 
+    # @return [Integer]
     def pic_width
-      100
+      60 
     end
 
+    # @return [Integer]
     def pic_height
       100
     end
