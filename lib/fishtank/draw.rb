@@ -24,8 +24,12 @@ module FishTank
           @offset_x += t.pic_width + 10
         end
 
+        @img.text(0, @offset_y + t.pic_height + 15) do
+          raw t.label 
+        end 
+
         @offset_x = 0
-        @offset_y += t.pic_height + 10
+        @offset_y += t.pic_height + 40 
       end  
 
       puts @img.to_s

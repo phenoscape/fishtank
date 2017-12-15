@@ -6,8 +6,8 @@ module FishTank
     attr_accessor :label 
     attr_accessor :stats
 
-    def initialize(label: nil)
-      @label = label
+    def initialize(taxon_id: nil)
+      @label = taxon_id 
       @stats = {}
       get_metadata
       crunch_stats
@@ -79,7 +79,6 @@ module FishTank
     end
 
     def attributes
-
     end
 
     def symmetry

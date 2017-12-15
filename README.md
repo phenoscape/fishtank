@@ -19,9 +19,9 @@ homininae = 'VTO_0011988'
 tank = FishTank::Tank.new
 
 # Make some Taxa
-t = FishTank::Taxon::Arm.new(label: homininae)
-f = FishTank::Taxon::Fish.new(label: fish)
-v = FishTank::Taxon::Tetrapod.new(label: lizard)
+t = FishTank::Taxon::Arm.new(taxon_id: homininae)
+f = FishTank::Taxon::Fish.new(taxon_id: fish)
+v = FishTank::Taxon::Tetrapod.new(taxon_id: lizard)
 
 # Add the Taxa to the tank
 tank.add(t)
@@ -32,7 +32,7 @@ tank.add(v)
 FishTank::Draw.tank(tank: tank, attributes: FishTank::QUALITIES)
 ```
 
-Then in the terminal:
+Then in the terminal (file is SVG, `.html` is convenience)
 
 ```
 ruby your_file.rb > index.html
