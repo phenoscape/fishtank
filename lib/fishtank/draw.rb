@@ -1,25 +1,28 @@
 require 'rasem'
 
 module FishTank
+
   module Draw
 
     @offset_x = 0
     @offset_y = 0
 
-    @img = Rasem::SVGImage.new(width: 2000, height: 2000) 
+    @img = Rasem::SVGImage.new(width: 2000, height: 2000, 'font-size'.to_sym => '8') 
 
+    # Draw the tank
     def self.tank(tank: nil, attributes: [:cells] ) 
       raise 'tank please' if tank.nil?
-      
+
       tank.taxa.each do |t|
         attributes.each do |a|
           render_taxon(t, a)
-          @img.text [300, 300],  'ADFSDFDFSF'
+
+          @img.text(@offset_x, @offset_y + t.pic_height + 2) do 
+            raw a
+          end 
 
           @offset_x += t.pic_width + 10
         end
-        
-
 
         @offset_x = 0
         @offset_y += t.pic_height + 10
@@ -53,8 +56,8 @@ module FishTank
       v = (taxon.stats[entity][:crunched][attribute] * 255).to_i
       "rgb(#{v}, 0, 0)"
     end
-
   end
+
 end
 
 

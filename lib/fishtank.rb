@@ -1,5 +1,4 @@
 
-require 'rasem'
 require 'phenoscaperb'
 require 'awesome_print'
 require 'byebug'
