@@ -3,6 +3,8 @@
 
 This library uses the [phenoscaperb](https://github.com/phenoscape/phenoscaperb) gem to query the [Phenoscape API](http://kb.phenoscape.org/apidocs/) for basic statistics on a taxon, entity, and quality basis.  It then renders the results as an SVG visualization.
 
+![viz](/doc/viz.png)
+
 # Basic use
 
 In `your_file.rb` :
