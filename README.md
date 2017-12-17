@@ -7,10 +7,12 @@ This library uses the [phenoscaperb](https://github.com/phenoscape/phenoscaperb)
 
 # Basic use
 
-In `your_file.rb` :
+```
+gem install fishtank
+```
 
 ```
-require './lib/fishtank'
+require 'fishtank'
 
 fish = 'VTO_0037519'
 lizard = 'VTO_9007513' 

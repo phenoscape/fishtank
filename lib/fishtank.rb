@@ -1,15 +1,19 @@
 
+
+
 require 'phenoscaperb'
 require 'awesome_print'
 require 'byebug'
 
-require_relative './fishtank/draw.rb'
-require_relative './fishtank/simple_nexml.rb'
-require_relative './fishtank/tank.rb'
-require_relative './fishtank/taxon.rb'
-require_relative './fishtank/taxon/fish.rb'
-require_relative './fishtank/taxon/tetrapod.rb'
-require_relative './fishtank/taxon/arm.rb'
+require "fishtank/version"
+
+require 'fishtank/draw'
+require 'fishtank/simple_nexml'
+require 'fishtank/tank'
+require 'fishtank/taxon'
+require 'fishtank/taxon/fish'
+require 'fishtank/taxon/tetrapod'
+require 'fishtank/taxon/arm'
 
 
 module FishTank
