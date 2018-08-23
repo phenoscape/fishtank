@@ -45,7 +45,7 @@ open index.html
 
 # About, thanks.
 
-Concieved and implemented at the  [2017 Phenoscape KB-DataFest](https://github.com/phenoscape/KB-DataFest-2017). Special thanks to Wasila Dahdul for her help with the taxon models and Scott Chamberlain for phenoscaperb.
+Concieved and implemented at the  [2017 Phenoscape KB-DataFest](https://github.com/phenoscape/KB-DataFest-2017). Special thanks to Wasila Dahdul for her help with the taxon models and Scott Chamberlain for phenoscaperb.  In addition to the Phenoscape support logistic support for Yoder came in part from NSF-ABI-1356381.
 
 # License
 
